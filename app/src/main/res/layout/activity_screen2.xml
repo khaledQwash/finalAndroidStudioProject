@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#553FB5"
+    android:padding="20px"
+    >
+
+    <TextView
+        android:id="@+id/services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="خدماتنا.."
+        android:textSize="80dp"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:fontFamily="serif-monospace"
+        />
+
+    <Button
+        android:id="@+id/service1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="برامج التغذية"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="36sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1DA585"
+        android:textStyle="bold"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/service2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="تدريب شخصي"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="36sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1DA585"
+        android:textStyle="bold"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/service3"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="إعادة التأهيل الرياضي"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="36sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1DA585"
+        android:textStyle="bold"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/service4"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="برامج الاسترخاء"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="36sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1DA585"
+        android:textStyle="bold"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/RegisterNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="احجز مكانك الآن.."
+        android:textSize="32dp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:fontFamily="serif-monospace"/>
+
+</LinearLayout>

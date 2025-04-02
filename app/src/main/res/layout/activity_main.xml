@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#553FB5"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/gym" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="مرحبا بكم في نادي الابطال"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="بإمكانكم الحجز"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#A5221D"
+        android:text="من هنا"
+        android:textSize="32sp" />
+
+</LinearLayout>
