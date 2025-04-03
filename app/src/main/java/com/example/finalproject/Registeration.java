@@ -12,24 +12,34 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class service1Screen extends AppCompatActivity {
+public class Registeration extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_service1_screen);
+        setContentView(R.layout.activity_registeration);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        ImageView img1 = findViewById(R.id.back_arrow);
+        ImageView img1 = findViewById(R.id.back_arrow5);
 
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(service1Screen.this, screen2.class);
+                Intent intent = new Intent(Registeration.this, screen2.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button = findViewById(R.id.registerBtn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Registeration.this, screen2.class);
+                intent.putExtra("message", "مرحباً بك، سيتواصل معك فريقنا في أقرب وقت..");
                 startActivity(intent);
             }
         });

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/back_arrow4"
+        android:layout_width="15pt"
+        android:layout_height="15pt"
+        android:src="@drawable/back_arrow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رجوع"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_toStartOf="@id/back_arrow4"
+        android:layout_alignTop="@id/back_arrow4"
+        android:layout_alignBottom="@id/back_arrow4"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"/>
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@id/back_arrow4"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/s4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/nutrition_programs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="برامج الاسترخاء"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutrition_programs_text"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="في نادينا، ندرك أن الصحة الجسدية والعقلية تسيران جنبًا إلى جنب. لهذا السبب، نقدم مجموعة متنوعة من برامج الاسترخاء المصممة لمساعدتك على التخلص من التوتر والقلق، وتجديد طاقتك، واستعادة توازنك الداخلي.
+
+ما الذي يميز برامج الاسترخاء لدينا؟
+
+مدربون متخصصون: يتمتع مدربونا المتخصصون في برامج الاسترخاء بخبرة واسعة في تقنيات الاسترخاء المختلفة، مثل اليوجا، والتأمل، والتنفس العميق. إنهم ملتزمون بمساعدتك على تحقيق أقصى استفادة من كل جلسة استرخاء.
+بيئة هادئة ومريحة: نوفر لك بيئة هادئة ومريحة، بعيدة عن صخب الحياة اليومية، لتتمكن من الاسترخاء والتخلص من التوتر بشكل كامل.
+مجموعة متنوعة من البرامج: نقدم مجموعة متنوعة من برامج الاسترخاء لتناسب احتياجاتك وتفضيلاتك المختلفة، بما في ذلك اليوجا، والتأمل الموجه، وجلسات التنفس العميق، والتدليك العلاجي.
+فوائد صحية متعددة: تساعد برامج الاسترخاء لدينا على تقليل التوتر والقلق، وتحسين جودة النوم، وزيادة التركيز، وتقوية جهاز المناعة، وتحسين الصحة العامة.
+تجربة متكاملة: نقدم لك تجربة استرخاء متكاملة، تشمل الموسيقى الهادئة، والروائح العطرية، والإضاءة الخافتة، لتعزيز شعورك بالراحة والاسترخاء.
+تشمل برامج الاسترخاء لدينا:
+
+جلسات اليوجا بأنواعها المختلفة.
+جلسات التأمل الموجه.
+جلسات التنفس العميق.
+جلسات التدليك العلاجي.
+جلسات الاسترخاء بالصوت.
+امنح نفسك هدية الاسترخاء والتجديد!"
+            android:textSize="16sp" />
+
+    </ScrollView>
+
+</RelativeLayout>

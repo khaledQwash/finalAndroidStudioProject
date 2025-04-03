@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#553FB5"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/back_arrow5"
+        android:layout_width="15pt"
+        android:layout_height="15pt"
+        android:src="@drawable/back_arrow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رجوع"
+        android:textColor="#89FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_toStartOf="@id/back_arrow5"
+        android:layout_alignTop="@id/back_arrow5"
+        android:layout_alignBottom="@id/back_arrow5"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/gym" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/imageView1"
+        android:layout_marginTop="0dp"
+        android:hint="الاسم"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColorHint="#89FFFFFF"
+        android:textColor="#FFFFFF"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/phone_input"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/name_input"
+        android:layout_marginTop="20dp"
+        android:hint="رقم الهاتف"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColorHint="#89FFFFFF"
+        android:textColor="#FFFFFF"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/goal_input"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/phone_input"
+        android:layout_marginTop="20dp"
+        android:hint="الهدف من التسجيل"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColorHint="#89FFFFFF"
+        android:textColor="#FFFFFF"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/goal_input"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#1DA585"
+        android:text="احجز الآن"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

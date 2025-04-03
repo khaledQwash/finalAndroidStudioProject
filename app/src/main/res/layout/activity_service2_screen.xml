@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/back_arrow2"
+        android:layout_width="15pt"
+        android:layout_height="15pt"
+        android:src="@drawable/back_arrow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رجوع"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_toStartOf="@id/back_arrow2"
+        android:layout_alignTop="@id/back_arrow2"
+        android:layout_alignBottom="@id/back_arrow2"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"/>
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@id/back_arrow2"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/s2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/nutrition_programs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="التدريب الشخصي"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutrition_programs_text"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="في نادينا، نؤمن بأن التدريب الشخصي هو الاستثمار الأمثل في صحتك ولياقتك البدنية. إذا كنت تسعى لتحقيق نتائج ملموسة، وتحسين أدائك الرياضي، والوصول إلى أفضل نسخة من نفسك، فإن مدربينا الشخصيين المحترفين هنا لمساعدتك على تحقيق ذلك.
+
+ما الذي يميز خدمة التدريب الشخصي لدينا؟
+
+مدربون مؤهلون وذوو خبرة: يتمتع مدربونا الشخصيون بأعلى المؤهلات والخبرات في مجال التدريب الرياضي. إنهم ملتزمون بمساعدتك على تحقيق أهدافك بأمان وفعالية.
+برامج تدريبية مخصصة: ندرك أن كل شخص لديه أهداف واحتياجات فريدة. لذلك، يقوم مدربونا بتصميم برامج تدريبية مخصصة لك، بناءً على تقييم شامل لحالتك البدنية، وأهدافك الرياضية، ونمط حياتك.
+متابعة ودعم مستمر: يقدم لك مدربك الشخصي الدعم والتحفيز المستمر، ويتابع تقدمك عن كثب، ويعدل برنامجك التدريبي حسب الحاجة. إنهم ملتزمون بمساعدتك على البقاء على المسار الصحيح وتحقيق أهدافك.
+تدريب فردي ومركّز: ستحصل على اهتمام فردي كامل من مدربك الشخصي، الذي سيركز على احتياجاتك وأهدافك فقط. سيضمن ذلك حصولك على أقصى استفادة من كل جلسة تدريبية.
+نتائج ملموسة وسريعة: بفضل التدريب الشخصي، ستلاحظ تحسنًا ملحوظًا في مستوى لياقتك البدنية، وقوتك، ومرونتك، وتكوين جسمك. ستحقق أهدافك الرياضية بشكل أسرع وأكثر فعالية.
+تشمل خدمات التدريب الشخصي لدينا:
+
+تقييم اللياقة البدنية وتحديد الأهداف.
+تصميم برامج تدريبية مخصصة.
+تدريب فردي ومركّز.
+متابعة وتقييم التقدم.
+نصائح وإرشادات حول التغذية السليمة.
+تحفيز ودعم مستمر.
+ابدأ رحلتك نحو جسم صحي ومثالي اليوم!"
+            android:textSize="16sp" />
+
+    </ScrollView>
+
+</RelativeLayout>

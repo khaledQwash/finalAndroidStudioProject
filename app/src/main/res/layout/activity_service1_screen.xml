@@ -1,10 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".service1Screen">
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="15pt"
+        android:layout_height="15pt"
+        android:src="@drawable/back_arrow"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رجوع"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_toStartOf="@id/back_arrow"
+        android:layout_alignTop="@id/back_arrow"
+        android:layout_alignBottom="@id/back_arrow"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"/>
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@id/back_arrow"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/s1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/nutrition_programs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="برامج التغذية"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutrition_programs_text"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="في نادينا، نؤمن بأن التغذية السليمة هي الركيزة الأساسية لتحقيق أقصى استفادة من تمارينك الرياضية وتحقيق أهدافك الصحية والبدنية. لهذا السبب، نقدم لك مجموعة شاملة ومتنوعة من برامج التغذية المصممة خصيصًا لتلبية احتياجاتك الفردية ومساعدتك على الوصول إلى أفضل نسخة من نفسك.
+
+ما الذي يميز برامج التغذية لدينا؟
+
+خطط مخصصة: ندرك أن كل جسم يختلف عن الآخر، وأن لكل شخص أهدافًا واحتياجات غذائية فريدة. لذلك، يقوم أخصائيو التغذية لدينا بإجراء تقييم شامل لحالتك الصحية، ونمط حياتك، وأهدافك الرياضية لتصميم خطة غذائية مخصصة لك.
+تنوع وشمولية: تشمل برامجنا مجموعة متنوعة من الخيارات الغذائية الصحية والمتوازنة، مع التركيز على توفير جميع العناصر الغذائية الأساسية التي يحتاجها جسمك لتحقيق الأداء الأمثل والتعافي السريع.
+متابعة ودعم مستمر: نؤمن بأهمية المتابعة المستمرة والدعم لتحقيق النجاح. لذلك، يقدم لك أخصائيو التغذية لدينا جلسات متابعة دورية لتقييم تقدمك، وتعديل خطتك الغذائية حسب الحاجة، وتقديم النصائح والإرشادات اللازمة.
+تثقيف وتوعية: نهدف إلى تزويدك بالمعرفة والأدوات اللازمة لاتخاذ خيارات غذائية صحية مستدامة. لذلك، نقدم لك ورش عمل وندوات تثقيفية حول التغذية السليمة، وكيفية قراءة الملصقات الغذائية، وإعداد وجبات صحية ولذيذة.
+نتائج ملموسة: بفضل التزامك بتطبيق برامجنا الغذائية، ستلاحظ تحسنًا ملحوظًا في مستوى طاقتك، وأدائك الرياضي، وتكوين جسمك، وصحتك العامة.
+تشمل برامجنا الغذائية:
+
+برامج إنقاص الوزن: لمساعدتك على التخلص من الدهون الزائدة وتحقيق وزن صحي.
+برامج زيادة الكتلة العضلية: لتزويدك بالعناصر الغذائية اللازمة لبناء العضلات وزيادة قوتك.
+برامج التغذية الرياضية: لتحسين أدائك الرياضي وتسريع عملية التعافي.
+برامج التغذية الصحية العامة: لتعزيز صحتك العامة وتحسين نمط حياتك.
+ابدأ رحلتك نحو جسم صحي ومثالي اليوم!"
+            android:textSize="16sp" />
+
+    </ScrollView>
+
+</RelativeLayout>
